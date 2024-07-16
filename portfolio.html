@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="portfolio">
+    <h1>My Projects</h1>
+    <div class="projects">
+        <div class="project">
+            <div class="project-content">
+                <img src="{{ url_for('static', filename='images/project1.jpg') }}" alt="Project 1">
+                <div class="project-info">
+                    <h2>FaceRecognition</h2>
+                    <p>Description of Project 1.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-content">
+                <img src="{{ url_for('static', filename='images/project2.jpg') }}" alt="Project 2">
+                <div class="project-info">
+                    <h2>Project 2</h2>
+                    <p>Description of Project 2.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+</section>
+{% endblock %}
